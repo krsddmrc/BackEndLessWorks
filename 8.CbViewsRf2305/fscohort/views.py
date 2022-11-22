@@ -46,8 +46,7 @@ def student_add(request):
 
 class StudentCreateView(CreateView):
     model=Student
-    form_class=StudentForm  '''Model'den alması yerine bir form oluşturmak istedik.
-                    oluşturduğmuz formu (form.py'da) import ettik ve değişkene atadık.'''
+    form_class=StudentForm  #!'''Model'den alması yerine bir form oluşturmak istedik.oluşturduğmuz formu (form.py'da) import ettik ve değişkene atadık.'''
     template_name='fscohort/student_add.html'
     success_url: reverse_lazy(list) # ! class_base için redirect yerine kullanılır, list tekrar gidecği sayfa
 
